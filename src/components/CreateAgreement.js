@@ -3,7 +3,7 @@ import React from 'react';
 const CreateAgreement = () => {
     return (
         <div>
-            Here we make agreement
+            <p className="title">Create Agreement</p>
         </div>
     );
 };

@@ -1,5 +1,5 @@
 .App {
-    text-align: center;
+
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
@@ -15,13 +15,27 @@ body {
     background-color: white;
     text-align: left;
     padding: 1rem;
-    border-bottom: solid grey;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    position: relative;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: left;
+}
+
+.p {
+    font-weight: normal;
+    font-size: 1em;
+    text-align: left;
 }
 
 .horizontal-header img {
     max-width: 100%;
     height: auto;
-
 }
 
 .vertical-header {
@@ -29,7 +43,9 @@ body {
     max-width: 20%;
     background-color: white;
     padding: 1rem;
-    border-right: solid grey;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+position: relative;
 }
 
 .nav-list {
@@ -55,7 +71,9 @@ body {
 .main-container {
     display: flex;
     flex: 1;
-    background: linear-gradient(to right, #EFEFBB, #D4D3DD);
+    background: linear-gradient(to bottom, rgb(99, 20, 141), rgb(32, 211, 193));
+    z-index: 1;
+    position: relative;
 }
 
 .main-content {
