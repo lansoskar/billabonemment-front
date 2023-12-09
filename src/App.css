@@ -1,38 +1,64 @@
 .App {
-  text-align: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    height: 100%;
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.horizontal-header {
+    background-color: white;
+    text-align: left;
+    padding: 1rem;
+    border-bottom: solid grey;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.horizontal-header img {
+    max-width: 100%;
+    height: auto;
+
 }
 
-.App-link {
-  color: #61dafb;
+.vertical-header {
+    min-width: 13%;
+    max-width: 20%;
+    background-color: white;
+    padding: 1rem;
+    border-right: solid grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-list {
+    list-style: none;
+    text-align: left;
+    margin-left: -1rem;
+}
+
+.nav-item {
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    background: linear-gradient(to right, #EFEFBB, #D4D3DD);
+}
+
+.main-content {
+    flex: 1;
+    padding: 1rem;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BrowseVehicles = () => {
+const Cars = () => {
     return (
         <div>
             Browse Vehicles in stock
@@ -8,4 +8,4 @@ const BrowseVehicles = () => {
     );
 };
 
-export default BrowseVehicles;
+export default Cars;
