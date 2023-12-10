@@ -27,23 +27,47 @@ const Cars = () => {
     return (
         <div>
             <p className="title">All Vehicles</p>
-            <p>All vehicles, types, model, fuel and status</p>
+            <p className="subText">All vehicles, types, model, fuel, and status</p>
 
-            {/* Renders list of cars with carId as key, needs to do css to make look really cool */}
-            <ul>
-                {cars.map(car => (
-                    <li key={car.carId}>
-                        <p>Id: {car.carId}</p>
-                        <p>Make: {car.make}</p>
-                        <p>Model: {car.model}</p>
-                        <p>Fueltype: {car.fuelType}</p>
-                        <p>Status: {car.status}</p>
-                    </li>
+            {/* Bootstrap table with color-coded borders from switch */}
+            <table className="table shadow">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Fuel Type</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                {cars.map((car) => (
+                    <tr key={car.carId} className={`table-${getStatusColorClass(car.status)}`}>
+                        <td>{car.carId}</td>
+                        <td>{car.make}</td>
+                        <td>{car.model}</td>
+                        <td>{car.fuelType}</td>
+                        <td>{car.status}</td>
+                    </tr>
                 ))}
-            </ul>
+                </tbody>
+            </table>
         </div>
     );
 };
 
+// Function to determine the Bootstrap class based on status
+const getStatusColorClass = (status) => {
+    switch (status) {
+        case 'Available':
+            return 'success';
+        case 'In Use':
+            return 'warning';
+        case 'Maintenance':
+            return 'danger';
+        default:
+            return 'dark'; // default
+    }
+};
 
 export default Cars;

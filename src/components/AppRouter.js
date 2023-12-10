@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from './Homepage';
 import Cars from './Cars';
 import CreateAgreement from './CreateAgreement';
+import AddCar from "./AddCar";
+import Customers from "./Customers";
+import AddCustomer from "./addCustomer";
 
 // BrowserRouter with routes, notice homepage being well, the home page at the root
 const AppRouter = () => {
@@ -13,7 +16,10 @@ const AppRouter = () => {
                 <Routes>
                     <Route path="/" element={<Homepage />} />
                     <Route path="/cars" element={<Cars />} />
-                    <Route path="/MakeOrder" element={<CreateAgreement />} />
+                    <Route path="/addCar" element={<AddCar />} />
+                    <Route path="/makeOrder" element={<CreateAgreement />} />
+                    <Route path="/customers" element={<Customers />} />
+                    <Route path="/addCustomer" element={<AddCustomer />} />
                 </Routes>
             </Router>
         </>

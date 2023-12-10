@@ -14,17 +14,19 @@ body {
 .horizontal-header {
     background-color: white;
     text-align: left;
-    padding: 1rem;
-
+    padding: 0.5rem 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 2;
     position: relative;
 }
 
 .title {
-    font-weight: bold;
+    font-weight: bolder;
+    color: #00b5ec;
     font-size: 2em;
     text-align: left;
+    margin-bottom: 0;
+    line-height: 1.2;
 }
 
 .p {
@@ -33,13 +35,23 @@ body {
     text-align: left;
 }
 
+.subText {
+    color: white;
+}
+
+.navbarTitle {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+
+}
+
 .horizontal-header img {
     max-width: 100%;
     height: auto;
 }
 
 .vertical-header {
-    min-width: 13%;
+    min-width: 11%;
     max-width: 20%;
     background-color: white;
     padding: 1rem;
