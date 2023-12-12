@@ -8,6 +8,8 @@ import AddCar from "./AddCar";
 import Customers from "./Customers";
 import AddCustomer from "./addCustomer";
 import SeeReservations from "./SeeReservations";
+import CreateDamageReport from "./CreateDamageReport";
+import SeeDamageReports from "./SeeDamageReports";
 
 // BrowserRouter with routes, notice homepage being well, the home page at the root
 const AppRouter = () => {
@@ -21,7 +23,9 @@ const AppRouter = () => {
                     <Route path="/makeOrder" element={<CreateAgreement />} />
                     <Route path="/customers" element={<Customers />} />
                     <Route path="/addCustomer" element={<AddCustomer />} />
-                    <Route path="/Reservations" element={<SeeReservations />} />
+                    <Route path="/reservations" element={<SeeReservations />} />
+                    <Route path="/createDamageReport" element={<CreateDamageReport />} />
+                    <Route path="/damageReports" element={<SeeDamageReports />} />
                 </Routes>
             </Router>
         </>

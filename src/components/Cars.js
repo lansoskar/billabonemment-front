@@ -26,10 +26,9 @@ const Cars = () => {
 
     return (
         <div>
-            <p className="title">All Vehicles</p>
-            <p className="subText">All vehicles, types, model, fuel, and status</p>
+            <p className="title">Alle Biler</p>
+            <p className="subText">Alle biler, deres id, make, model, brændstof og status</p>
 
-            {/* Bootstrap table with color-coded borders from switch */}
             <table className="table shadow">
                 <thead>
                 <tr>

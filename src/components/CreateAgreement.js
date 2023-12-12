@@ -6,6 +6,7 @@ const CreateAgreement = () => {
         car_id: '',
         startDate: '',
         endDate: '',
+        pickupLocation: '',
     });
 
 
@@ -52,6 +53,7 @@ const CreateAgreement = () => {
                 car: carData,
                 startDate: agreementData.startDate,
                 endDate: agreementData.endDate,
+                pickupLocation: agreementData.pickupLocation,
             };
             console.log(agreement)
             // Step 1: Check credit approval
@@ -62,7 +64,7 @@ const CreateAgreement = () => {
             }
 
             // Step 2: Create lending agreement
-            const response = await fetch('http://localhost:8080/api/lendingAgreement/createLendingAgreement', {
+            const response = await fetch('http://localhost:8080/api/lendingAgreements/createLendingAgreement', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -96,7 +98,7 @@ const CreateAgreement = () => {
 
     return (
         <div className="container mt-4">
-            <h2 className="mb-4">Create Lending Agreement</h2>
+            <h2 className="title">Create Lending Agreement</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="customer_id" className="form-label">
@@ -147,6 +149,19 @@ const CreateAgreement = () => {
                         id="endDate"
                         name="endDate"
                         value={agreementData.endDate}
+                        onChange={handleInputChange}
+                    />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="pickupLocation" className="form-label">
+                        Afhentningsadresse:
+                    </label>
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="pickupLocation"
+                        name="pickupLocation"
+                        value={agreementData.pickupLocation}
                         onChange={handleInputChange}
                     />
                 </div>

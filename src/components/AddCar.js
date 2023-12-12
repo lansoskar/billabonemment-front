@@ -44,10 +44,10 @@ const AddCar = () => {
 
     return (
         <div className="container mt-4">
-            <h2 className="title">Add a New Car</h2>
+            <h2 className="title">Opret ny bil</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="make" className="form-label">Make:</label>
+                    <label htmlFor="make" className="subText">Make:</label>
                     <input
                         type="text"
                         className="form-control"
@@ -58,7 +58,7 @@ const AddCar = () => {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="model" className="form-label">Model:</label>
+                    <label htmlFor="model" className="subText">Model:</label>
                     <input
                         type="text"
                         className="form-control"
@@ -69,7 +69,7 @@ const AddCar = () => {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="fuelType" className="form-label">Fuel Type:</label>
+                    <label htmlFor="fuelType" className="subText">Fuel Type:</label>
                     <input
                         type="text"
                         className="form-control"
@@ -80,7 +80,7 @@ const AddCar = () => {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="status" className="form-label">Status:</label>
+                    <label htmlFor="status" className="subText">Status:</label>
                     <input
                         type="text"
                         className="form-control"

@@ -25,8 +25,8 @@ const Customers = () => {
 
     return (
         <div>
-            <p className="title">All Customers</p>
-            <p className="subText">All Customers and their name, email, contact number, address and zipcode and if their credit is approved</p>
+            <p className="title">Alle kunder</p>
+            <p className="subText">Alle kunder og deres navn, email, kontact nummer, addresse, postnummer og hvis deres credit is approved</p>
 
             <table className="table shadow">
                 <thead>

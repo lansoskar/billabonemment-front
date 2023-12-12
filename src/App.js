@@ -9,7 +9,7 @@ function App() {
     return (
         <div className="App">
             <header className="horizontal-header">
-                <p className="title">Bilabonnement</p>
+                <p className="title2">Bilabonnement</p>
             </header>
             <div className="main-container">
                 <header className="vertical-header">
@@ -17,12 +17,14 @@ function App() {
                         <ul className='nav-list'>
                             <p className="navbarTitle">Oversigt</p>
                             <li><a className="nav-link" href="http://localhost:3000">Home </a></li>
+                            <li><a className="nav-link" href="http://localhost:3000/addcar">Opret ny bil </a></li>
                             <li><a className="nav-link" href="http://localhost:3000/cars">Se alle biler </a></li>
-                            <li><a className="nav-link" href="http://localhost:3000/addcar">Tilføj bil </a></li>
-                            <li><a className="nav-link" href="http://localhost:3000/makeorder">Lav ordrer </a></li>
+                            <li><a className="nav-link" href="http://localhost:3000/makeorder">Opret ny ordre </a></li>
                             <li><a className="nav-link" href="http://localhost:3000/reservations">Reservationer</a></li>
-                            <li><a className="nav-link" href="http://localhost:3000/customers">Kunder </a></li>
-                            <li><a className="nav-link" href="http://localhost:3000/addCustomer">Tilføj kunde </a></li>
+                            <li><a className="nav-link" href="http://localhost:3000/addCustomer">Opret kunde </a></li>
+                            <li><a className="nav-link" href="http://localhost:3000/customers">Se alle kunder </a></li>
+                            <li><a className="nav-link" href="http://localhost:3000/createDamageReport">Opret Skade-rapport </a></li>
+                            <li><a className="nav-link" href="http://localhost:3000/damageReports">Se alle skade-rapporter </a></li>
                         </ul>
                     </nav>
                 </header>

@@ -27,6 +27,18 @@ body {
     text-align: left;
     margin-bottom: 0;
     line-height: 1.2;
+
+}
+
+.title2 {
+    font-weight: 600;
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 0;
+    line-height: 1.2;
+    background-image: linear-gradient(to top, rgb(99, 20, 141), rgb(32, 211, 193));
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .p {
@@ -42,7 +54,8 @@ body {
 .navbarTitle {
     text-decoration: underline;
     text-underline-offset: 5px;
-
+    text-align: center;
+    font-weight: bold;
 }
 
 .horizontal-header img {
@@ -63,7 +76,7 @@ position: relative;
 .nav-list {
     list-style: none;
     text-align: left;
-    margin-left: -1rem;
+    margin-left: -2rem;
 }
 
 .nav-item {
