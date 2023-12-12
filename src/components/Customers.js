@@ -42,8 +42,8 @@ const Customers = () => {
                 </thead>
                 <tbody>
                 {customers.map((customer) => (
-                    <tr key={customer.id} >
-                        <td>{customer.id}</td>
+                    <tr key={customer.customerId} >
+                        <td>{customer.customerId}</td>
                         <td>{customer.name}</td>
                         <td>{customer.email}</td>
                         <td>{customer.contactNumber}</td>

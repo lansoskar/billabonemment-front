@@ -19,7 +19,8 @@ function App() {
                             <li><a className="nav-link" href="http://localhost:3000">Home </a></li>
                             <li><a className="nav-link" href="http://localhost:3000/cars">Se alle biler </a></li>
                             <li><a className="nav-link" href="http://localhost:3000/addcar">Tilføj bil </a></li>
-                            <li><a className="nav-link" href="http://localhost:3000/makeorder">Make Order </a></li>
+                            <li><a className="nav-link" href="http://localhost:3000/makeorder">Lav ordrer </a></li>
+                            <li><a className="nav-link" href="http://localhost:3000/reservations">Reservationer</a></li>
                             <li><a className="nav-link" href="http://localhost:3000/customers">Kunder </a></li>
                             <li><a className="nav-link" href="http://localhost:3000/addCustomer">Tilføj kunde </a></li>
                         </ul>
