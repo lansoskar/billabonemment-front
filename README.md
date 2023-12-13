@@ -13,8 +13,10 @@ Det her er frontend delen af vores eksamensprojekt
 
 <h3>To-Do liste / backlog</h3>
 * rows i damagereport er ikke colorcoded 
+* Filtrering i liste komponenter
 * ryd op i ui, gør det mere universalt
 * gør alt tekst på siden til dansk
+* Inputs er ikke særlig strenge med hvad de tager
 * Postnummer bliver ikke displayed i se alle kunder, sikkert rendering error
 * alle reservationer er i samme sted, ikke noget til at tyde om de er aktive eller ej + arkivering
 * man kan trykke på mark complete knappen i damage reports flere gange, selvom der ikke burde ske noget efter første gang

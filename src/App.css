@@ -21,13 +21,13 @@ body {
 }
 
 .title {
-    font-weight: bolder;
+    font-weight: 600;
     color: #00b5ec;
     font-size: 2em;
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
     line-height: 1.2;
-
 }
 
 .title2 {
@@ -49,6 +49,8 @@ body {
 
 .subText {
     color: white;
+    font-size: 1em;
+    margin-bottom: 0.3vh;
 }
 
 .navbarTitle {
@@ -104,4 +106,27 @@ position: relative;
 .main-content {
     flex: 1;
     padding: 1rem;
+}
+
+.text-danger {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.1em;
+
+}
+
+.text-success {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.1em;
+}
+
+.card-text {
+    font-size: 2em;
+}
+
+.form-control {
+    max-width: 45%;
 }

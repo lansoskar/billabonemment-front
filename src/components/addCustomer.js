@@ -47,10 +47,10 @@ const AddCustomer = () => {
 
     return (
         <div className="container mt-4">
-            <h2 className="title">Add a New Customer</h2>
+            <h2 className="title">Opret ny Kunde i systemet</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="name" className="form-label">Name:</label>
+                    <label htmlFor="name" className="subText">Fuldt Navn:</label>
                     <input
                         type="text"
                         className="form-control"
@@ -58,10 +58,11 @@ const AddCustomer = () => {
                         name="name"
                         value={customerData.name}
                         onChange={handleInputChange}
+                        placeholder="fx. Morten Jensen Pedersen"
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="email" className="form-label">Email:</label>
+                    <label htmlFor="email" className="subText">Email:</label>
                     <input
                         type="text"
                         className="form-control"
@@ -72,7 +73,7 @@ const AddCustomer = () => {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="contactNumber" className="form-label">Contact Number:</label>
+                    <label htmlFor="contactNumber" className="subText">Kontaktnummer:</label>
                     <input
                         type="text"
                         className="form-control"
@@ -83,7 +84,7 @@ const AddCustomer = () => {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="addressStreet" className="form-label">Street:</label>
+                    <label htmlFor="addressStreet" className="subText">Adresse:</label>
                     <input
                         type="text"
                         className="form-control"
@@ -94,7 +95,7 @@ const AddCustomer = () => {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="addressCity" className="form-label">City:</label>
+                    <label htmlFor="addressCity" className="subText">Postnummer:</label>
                     <input
                         type="text"
                         className="form-control"
@@ -113,10 +114,10 @@ const AddCustomer = () => {
                         checked={customerData.creditApproved}
                         onChange={() => setCustomerData({ ...customerData, creditApproved: !customerData.creditApproved })}
                     />
-                    <label className="form-check-label" htmlFor="creditApproved">Credit Approved</label>
+                    <label className="form-check-label" htmlFor="creditApproved">Kredit Godkendt</label>
                 </div>
 
-                <button type="submit" className="btn btn-primary">Add Customer</button>
+                <button type="submit" className="btn btn-primary">Tilføj kunde</button>
             </form>
         </div>
     );

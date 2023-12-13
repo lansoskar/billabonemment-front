@@ -63,17 +63,17 @@ const SeeDamageReports = () => {
 
     return (
         <div className="container mt-4">
-            <h2 className="title">Damage Reports Overview</h2>
-            <p className="subText">Skaderapporter, herunder; rapport id, bil id, reservations id, type af skade, kost af reperation, er reperation færdig?</p>
+            <h2 className="title">Alle skade-rapporter</h2>
+            <p className="subText">Skaderapporter, herunder; skade-rapport id, bil id, reservations id, type af skade, kost af reperation, er reperation færdig?</p>
             <table className="table shadow">
                 <thead>
                 <tr>
                     <th>Rap. ID</th>
                     <th>Bil ID</th>
-                    <th>Aft. ID</th>
+                    <th>Res. ID</th>
                     <th>Skadetype</th>
-                    <th>Reperationskost (kr.)</th>
-                    <th>Handling</th>
+                    <th>Reparationsomkostninger (kr.)</th>
+                    <th>Status</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -89,7 +89,7 @@ const SeeDamageReports = () => {
                                 className={report.repairComplete ? 'btn btn-secondary' : 'btn btn-primary'}
                                 onClick={() => handleButtonPress(report.damageReportId, report.car.carId, !report.repairComplete)}
                             >
-                                {report.repairComplete ? 'Completed' : 'Mark Complete'}
+                                {report.repairComplete ? 'Færdiggjort' : 'Marker Færdig'}
                             </button>
                         </td>
                     </tr>

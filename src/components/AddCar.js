@@ -4,8 +4,9 @@ const AddCar = () => {
     const [carData, setCarData] = useState({
         make: '',
         model: '',
-        fuelType: '',  // Updated to match the API expectation
+        fuelType: '',
         status: '',
+        carValue: '',
     });
 
     const handleInputChange = (e) => {
@@ -36,6 +37,7 @@ const AddCar = () => {
                 model: '',
                 fuelType: '',
                 status: '',
+                carValue: '',
             });
         } catch (error) {
             console.error('Error adding car:', error.message);
@@ -44,10 +46,10 @@ const AddCar = () => {
 
     return (
         <div className="container mt-4">
-            <h2 className="title">Opret ny bil</h2>
+            <h2 className="title">Opret ny bil i systemet</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="make" className="subText">Make:</label>
+                    <label htmlFor="make" className="subText">Mærke:</label>
                     <input
                         type="text"
                         className="form-control"
@@ -69,7 +71,7 @@ const AddCar = () => {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="fuelType" className="subText">Fuel Type:</label>
+                    <label htmlFor="fuelType" className="subText">Brændstofstype:</label>
                     <input
                         type="text"
                         className="form-control"
@@ -88,10 +90,22 @@ const AddCar = () => {
                         name="status"
                         value={carData.status}
                         onChange={handleInputChange}
+                        placeholder="Available / Reserved / Maintenance"
+                    />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="carValue" className="subText">Bil værdi:</label>
+                    <input
+                        type="number"
+                        className="form-control"
+                        id="carValue"
+                        name="carValue"
+                        value={carData.carValue}
+                        onChange={handleInputChange}
                     />
                 </div>
 
-                <button type="submit" className="btn btn-primary">Add Car</button>
+                <button type="submit" className="btn btn-primary">Tilføj Bil</button>
             </form>
         </div>
     );

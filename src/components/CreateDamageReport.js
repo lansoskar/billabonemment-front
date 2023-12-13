@@ -80,11 +80,11 @@ const CreateDamageReport = () => {
 
     return (
         <div className="container mt-4">
-            <h2 className="mb-4">Create Damage Report</h2>
+            <h2 className="title">Opret skade-rapport</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="typeOfDamage" className="form-label">
-                        Type of Damage:
+                    <label htmlFor="typeOfDamage" className="subText">
+                        Type af skade:
                     </label>
                     <input
                         type="text"
@@ -94,11 +94,12 @@ const CreateDamageReport = () => {
                         value={damageReportData.typeOfDamage}
                         onChange={handleInputChange}
                         required
+                        placeholder="fx. forrude, bremser, hjul"
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="repairCost" className="form-label">
-                        Repair Cost:
+                    <label htmlFor="repairCost" className="subText">
+                        Reparationsomkostninger (kr.):
                     </label>
                     <input
                         type="text"
@@ -108,11 +109,12 @@ const CreateDamageReport = () => {
                         value={damageReportData.repairCost}
                         onChange={handleInputChange}
                         required
+                        placeholder="fx. 1000"
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="carId" className="form-label">
-                        Car ID:
+                    <label htmlFor="carId" className="subText">
+                        Bil ID:
                     </label>
                     <input
                         type="number"
@@ -125,8 +127,8 @@ const CreateDamageReport = () => {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="lendingAgreementId" className="form-label">
-                        Lending Agreement ID:
+                    <label htmlFor="lendingAgreementId" className="subText">
+                        Reservation ID:
                     </label>
                     <input
                         type="number"
@@ -139,7 +141,7 @@ const CreateDamageReport = () => {
                     />
                 </div>
                 <button type="submit" className="btn btn-primary">
-                    Create Damage Report
+                    Opret skade-rapport
                 </button>
             </form>
         </div>

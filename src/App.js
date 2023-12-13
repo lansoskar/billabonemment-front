@@ -23,7 +23,7 @@ function App() {
                             <li><a className="nav-link" href="http://localhost:3000/reservations">Reservationer</a></li>
                             <li><a className="nav-link" href="http://localhost:3000/addCustomer">Opret kunde </a></li>
                             <li><a className="nav-link" href="http://localhost:3000/customers">Se alle kunder </a></li>
-                            <li><a className="nav-link" href="http://localhost:3000/createDamageReport">Opret Skade-rapport </a></li>
+                            <li><a className="nav-link" href="http://localhost:3000/createDamageReport">Opret skade-rapport </a></li>
                             <li><a className="nav-link" href="http://localhost:3000/damageReports">Se alle skade-rapporter </a></li>
                         </ul>
                     </nav>

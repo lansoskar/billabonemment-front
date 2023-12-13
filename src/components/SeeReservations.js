@@ -24,16 +24,17 @@ const SeeReservations = () => {
 
     return (
         <div className="container mt-4">
-            <h2 className="mb-4">Reservations</h2>
+            <h2 className="title">Reservationer</h2>
+            <p className="subText">Alle reservationer, deres reservation id, bil id, kunde id, afhentningssted, start dato, slut dato</p>
             <table className="table shadow">
                 <thead>
                 <tr>
-                    <th>Lending Agreement ID</th>
-                    <th>Car ID</th>
-                    <th>Customer ID</th>
-                    <th>Afhentningsted</th>
-                    <th>Start Date</th>
-                    <th>End Date</th>
+                    <th>Reservation ID</th>
+                    <th>Bil ID</th>
+                    <th>Kunde ID</th>
+                    <th>Afhentningssted</th>
+                    <th>Start Dato</th>
+                    <th>Slut Dato</th>
                 </tr>
                 </thead>
                 <tbody>

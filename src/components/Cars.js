@@ -27,16 +27,17 @@ const Cars = () => {
     return (
         <div>
             <p className="title">Alle Biler</p>
-            <p className="subText">Alle biler, deres id, make, model, brændstof og status</p>
+            <p className="subText">Alle biler, deres id, mærke, model, brændstoftype, status og værdi</p>
 
             <table className="table shadow">
                 <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Make</th>
+                    <th>Mærke</th>
                     <th>Model</th>
-                    <th>Fuel Type</th>
+                    <th>Brændstoftype</th>
                     <th>Status</th>
+                    <th>Bil-værdi (kr.)</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -47,6 +48,7 @@ const Cars = () => {
                         <td>{car.model}</td>
                         <td>{car.fuelType}</td>
                         <td>{car.status}</td>
+                        <td>{car.carValue}</td>
                     </tr>
                 ))}
                 </tbody>
@@ -55,7 +57,7 @@ const Cars = () => {
     );
 };
 
-// Function to determine the Bootstrap class based on status
+// Function switch determine the Bootstrap class based on status
 const getStatusColorClass = (status) => {
     switch (status) {
         case 'Available':

@@ -98,11 +98,11 @@ const CreateAgreement = () => {
 
     return (
         <div className="container mt-4">
-            <h2 className="title">Create Lending Agreement</h2>
+            <h2 className="title">Opret ny Reservation i systemet</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="customer_id" className="form-label">
-                        Customer ID:
+                    <label htmlFor="customer_id" className="subText">
+                        Kunde ID:
                     </label>
                     <input
                         type="number"
@@ -114,8 +114,8 @@ const CreateAgreement = () => {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="car_id" className="form-label">
-                        Car ID:
+                    <label htmlFor="car_id" className="subText">
+                        Bil ID:
                     </label>
                     <input
                         type="number"
@@ -127,8 +127,8 @@ const CreateAgreement = () => {
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="startDate" className="form-label">
-                        Start Date:
+                    <label htmlFor="startDate" className="subText">
+                        Start Dato:
                     </label>
                     <input
                         type="text"
@@ -137,11 +137,12 @@ const CreateAgreement = () => {
                         name="startDate"
                         value={agreementData.startDate}
                         onChange={handleInputChange}
+                        placeholder="YYYY-MM-DD"
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="endDate" className="form-label">
-                        End Date:
+                    <label htmlFor="endDate" className="subText">
+                        Slut Dato:
                     </label>
                     <input
                         type="text"
@@ -150,10 +151,11 @@ const CreateAgreement = () => {
                         name="endDate"
                         value={agreementData.endDate}
                         onChange={handleInputChange}
+                        placeholder="YYYY-MM-DD"
                     />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="pickupLocation" className="form-label">
+                    <label htmlFor="pickupLocation" className="subText">
                         Afhentningsadresse:
                     </label>
                     <input
@@ -167,7 +169,7 @@ const CreateAgreement = () => {
                 </div>
 
                 <button type="submit" className="btn btn-primary">
-                    Create Lending Agreement
+                    Opret Reservation
                 </button>
             </form>
         </div>
