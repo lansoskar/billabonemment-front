@@ -8,7 +8,7 @@ const Cars = () => {
     useEffect(() => {
         const fetchCars = async () => {
             try {
-                const response = await fetch('http://localhost:8080/api/cars');
+                const response = await fetch('bilabonnementback.azurewebsites.net/api/cars');
 
                 if (!response.ok) {
                     throw new Error('Failed to fetch cars');

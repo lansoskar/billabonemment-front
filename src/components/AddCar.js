@@ -18,7 +18,7 @@ const AddCar = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:8080/api/cars/addCar', {
+            const response = await fetch('bilabonnementback.azurewebsites.net/api/cars/addCar', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
