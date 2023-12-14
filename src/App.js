@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import AppRouter from './components/AppRouter';
-
+import Link from "react-router-dom";
 
 //approuter contains actual routes and mounts components linked to url
 //navbar is to well, navigate
@@ -16,15 +16,15 @@ function App() {
                     <nav className="navbar navbar-light bg-light">
                         <ul className='nav-list'>
                             <p className="navbarTitle">Oversigt</p>
-                            <li><a className="nav-link" href="/">Home </a></li>
-                            <li><a className="nav-link" href="/addcar">Opret ny bil </a></li>
-                            <li><a className="nav-link" href="/cars">Se alle biler </a></li>
-                            <li><a className="nav-link" href="/makeOrder">Opret ny ordre </a></li>
-                            <li><a className="nav-link" href="/reservations">Reservationer</a></li>
-                            <li><a className="nav-link" href="/addCustomer">Opret kunde </a></li>
-                            <li><a className="nav-link" href="/customers">Se alle kunder </a></li>
-                            <li><a className="nav-link" href="/createDamageReport">Opret skade-rapport </a></li>
-                            <li><a className="nav-link" href="/damageReports">Se alle skade-rapporter </a></li>
+                            <li><Link className="nav-link" to="/">Home </Link></li>
+                            <li><Link className="nav-link" to="/addcar">Opret ny bil </Link></li>
+                            <li><Link className="nav-link" to="/cars">Se alle biler </Link></li>
+                            <li><Link className="nav-link" to="/makeOrder">Opret ny ordre </Link></li>
+                            <li><Link className="nav-link" to="/reservations">Reservationer</Link></li>
+                            <li><Link className="nav-link" to="/addCustomer">Opret kunde </Link></li>
+                            <li><Link className="nav-link" to="/customers">Se alle kunder </Link></li>
+                            <li><Link className="nav-link" to="/createDamageReport">Opret skade-rapport </Link></li>
+                            <li><Link className="nav-link" to="/damageReports">Se alle skade-rapporter </Link></li>
                         </ul>
                     </nav>
                 </header>
