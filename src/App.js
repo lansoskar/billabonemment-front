@@ -16,15 +16,15 @@ function App() {
                     <nav className="navbar navbar-light bg-light">
                         <ul className='nav-list'>
                             <p className="navbarTitle">Oversigt</p>
-                            <li><a className="nav-link" href="https://billabonnement-front.onrender.com">Home </a></li>
-                            <li><a className="nav-link" href="https://billabonnement-front.onrender.com/addcar">Opret ny bil </a></li>
-                            <li><a className="nav-link" href="https://billabonnement-front.onrender.com/cars">Se alle biler </a></li>
-                            <li><a className="nav-link" href="https://billabonnement-front.onrender.com/makeorder">Opret ny ordre </a></li>
-                            <li><a className="nav-link" href="https://billabonnement-front.onrender.com/reservations">Reservationer</a></li>
-                            <li><a className="nav-link" href="https://billabonnement-front.onrender.com/addCustomer">Opret kunde </a></li>
-                            <li><a className="nav-link" href="https://billabonnement-front.onrender.com/customers">Se alle kunder </a></li>
-                            <li><a className="nav-link" href="https://billabonnement-front.onrender.com/createDamageReport">Opret skade-rapport </a></li>
-                            <li><a className="nav-link" href="https://billabonnement-front.onrender.com/damageReports">Se alle skade-rapporter </a></li>
+                            <li><a className="nav-link" href="http://billabonnement-front.onrender.com">Home </a></li>
+                            <li><a className="nav-link" href="http://billabonnement-front.onrender.com/addcar">Opret ny bil </a></li>
+                            <li><a className="nav-link" href="http://billabonnement-front.onrender.com/cars">Se alle biler </a></li>
+                            <li><a className="nav-link" href="http://billabonnement-front.onrender.com/makeorder">Opret ny ordre </a></li>
+                            <li><a className="nav-link" href="http://billabonnement-front.onrender.com/reservations">Reservationer</a></li>
+                            <li><a className="nav-link" href="http://billabonnement-front.onrender.com/addCustomer">Opret kunde </a></li>
+                            <li><a className="nav-link" href="http://billabonnement-front.onrender.com/customers">Se alle kunder </a></li>
+                            <li><a className="nav-link" href="http://billabonnement-front.onrender.com/createDamageReport">Opret skade-rapport </a></li>
+                            <li><a className="nav-link" href="http://billabonnement-front.onrender.com/damageReports">Se alle skade-rapporter </a></li>
                         </ul>
                     </nav>
                 </header>
