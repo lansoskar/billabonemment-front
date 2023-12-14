@@ -22,9 +22,9 @@ const Homepage = () => {
             try {
                 const [carsResponse, reservationsResponse, customersResponse, damageReportsResponse] = await Promise.all([
                     fetch('https://bilabonnementback.azurewebsites.net/api/cars'),
-                    fetch('bilabonnementback.azurewebsites.net/api/lendingAgreements'),
-                    fetch('bilabonnementback.azurewebsites.net/api/customers'),
-                    fetch('bilabonnementback.azurewebsites.net/api/damageReports')
+                    fetch('https://bilabonnementback.azurewebsites.net/api/lendingAgreements'),
+                    fetch('https://bilabonnementback.azurewebsites.net/api/customers'),
+                    fetch('https://bilabonnementback.azurewebsites.net/api/damageReports')
                 ]);
 
                 if (!carsResponse.ok) {
