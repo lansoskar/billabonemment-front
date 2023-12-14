@@ -19,7 +19,7 @@ const AddCustomer = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:8080/api/addCustomer', {
+            const response = await fetch('https://bilabonnementback.azurewebsites.net/api/addCustomer', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

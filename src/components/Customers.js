@@ -7,7 +7,7 @@ const Customers = () => {
     useEffect(() => {
         const fetchCustomers = async () => {
             try {
-                const response = await fetch('http://localhost:8080/api/customers');
+                const response = await fetch('https://bilabonnementback.azurewebsites.net/api/customers');
 
                 if (!response.ok) {
                     throw new Error('Failed to fetch customers');

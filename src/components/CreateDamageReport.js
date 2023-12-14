@@ -26,7 +26,7 @@ const CreateDamageReport = () => {
         e.preventDefault();
 
         //fetch lending agreement details
-        const lendingResponse = await fetch(`http://localhost:8080/api/lendingAgreements/getLendingAgreement/${damageReportData.lendingAgreementId}`)
+        const lendingResponse = await fetch(`https://bilabonnementback.azurewebsites.net/api/lendingAgreements/getLendingAgreement/${damageReportData.lendingAgreementId}`)
         if (!lendingResponse.ok) {
             throw new Error("Failed to fetch Lending Agreement details")
         }
@@ -36,7 +36,7 @@ const CreateDamageReport = () => {
         const lendingAgreement = {...lendingData, status: null};
 
         //fetch car details
-        const carResponse = await fetch(`http://localhost:8080/api/cars/getCar/${damageReportData.carId}`);
+        const carResponse = await fetch(`https://bilabonnementback.azurewebsites.net/api/cars/getCar/${damageReportData.carId}`);
         if (!carResponse.ok) {
             throw new Error('Failed to fetch car details')
         }
@@ -55,7 +55,7 @@ const CreateDamageReport = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:8080/api/damageReport/createDamageReport', {
+            const response = await fetch('https://bilabonnementback.azurewebsites.net/api/damageReport/createDamageReport', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

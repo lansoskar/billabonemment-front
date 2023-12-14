@@ -7,7 +7,7 @@ const SeeDamageReports = () => {
         // Fetch all damage reports when the component mounts
         const fetchDamageReports = async () => {
             try {
-                const response = await fetch('http://localhost:8080/api/damageReports');
+                const response = await fetch('https://bilabonnementback.azurewebsites.net/api/damageReports');
                 if (!response.ok) {
                     throw new Error('Failed to fetch damage reports');
                 }
@@ -28,7 +28,7 @@ const SeeDamageReports = () => {
             const numericReportId = Number(reportId);
             const numericCarId = Number(carId);
 
-            const carResponse = await fetch(`http://localhost:8080/api/cars/setCarAvailable/${numericCarId}`, {
+            const carResponse = await fetch(`https://bilabonnementback.azurewebsites.net/api/cars/setCarAvailable/${numericCarId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ const SeeDamageReports = () => {
                 throw new Error('Failed to update car status');
             }
 
-            const damageReportResponse = await fetch(`http://localhost:8080/api/damageReports/updateRepairComplete/${numericReportId}`, {
+            const damageReportResponse = await fetch(`https://bilabonnementback.azurewebsites.net/api/damageReports/updateRepairComplete/${numericReportId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ const SeeDamageReports = () => {
             }
 
             // If the update was successful, fetch the updated list of damage reports
-            const updatedReports = await fetch('http://localhost:8080/api/damageReports');
+            const updatedReports = await fetch('https://bilabonnementback.azurewebsites.net/api/damageReports');
             const updatedData = await updatedReports.json();
             setDamageReports(updatedData);
         } catch (error) {

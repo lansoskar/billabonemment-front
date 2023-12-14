@@ -7,7 +7,7 @@ const SeeReservations = () => {
         // Fetch all lending agreements when the component mounts
         const fetchReservations = async () => {
             try {
-                const response = await fetch('http://localhost:8080/api/lendingAgreements');
+                const response = await fetch('https://bilabonnementback.azurewebsites.net/api/lendingAgreements');
                 if (!response.ok) {
                     throw new Error('Failed to fetch lending agreements');
                 }

@@ -27,7 +27,7 @@ const CreateAgreement = () => {
 
         try {
             // fetch customer detail
-            const customerResponse = await fetch(`http://localhost:8080/api/customers/getCustomer/${agreementData.customer_id}`);
+            const customerResponse = await fetch(`https://bilabonnementback.azurewebsites.net/api/customers/getCustomer/${agreementData.customer_id}`);
             if (!customerResponse.ok) {
                 throw new Error('Failed to fetch customer details')
             }
@@ -38,7 +38,7 @@ const CreateAgreement = () => {
             const customer = {...customerData, status: null};
 
             //fetch car details
-            const carResponse = await fetch(`http://localhost:8080/api/cars/getCar/${agreementData.car_id}`);
+            const carResponse = await fetch(`https://bilabonnementback.azurewebsites.net/api/cars/getCar/${agreementData.car_id}`);
             if (!carResponse.ok) {
                 throw new Error('Failed to fetch car details')
             }
@@ -57,14 +57,14 @@ const CreateAgreement = () => {
             };
             console.log(agreement)
             // Step 1: Check credit approval
-            const creditCheckResponse = await fetch(`http://localhost:8080/api/customers/checkCredit/${agreementData.customer_id}`)
+            const creditCheckResponse = await fetch(`https://bilabonnementback.azurewebsites.net/api/customers/checkCredit/${agreementData.customer_id}`)
 
             if (!creditCheckResponse.ok) {
                 throw new Error('Credit check failed. Lending agreement not created.');
             }
 
             // Step 2: Create lending agreement
-            const response = await fetch('http://localhost:8080/api/lendingAgreements/createLendingAgreement', {
+            const response = await fetch('https://bilabonnementback.azurewebsites.net/api/lendingAgreements/createLendingAgreement', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ const CreateAgreement = () => {
             }
 
             // Step 3: Update car status
-            const updateCarStatusResponse = await fetch(`http://localhost:8080/api/cars/updateCarStatus/${agreementData.car_id}`, {
+            const updateCarStatusResponse = await fetch(`https://bilabonnementback.azurewebsites.net/api/cars/updateCarStatus/${agreementData.car_id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
