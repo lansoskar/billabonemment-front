@@ -4,7 +4,6 @@ import AppRouter from './components/AppRouter';
 import Link from "react-router-dom";
 
 //approuter contains actual routes and mounts components linked to url
-//navbar is to well, navigate
 function App() {
     return (
         <div className="App">
